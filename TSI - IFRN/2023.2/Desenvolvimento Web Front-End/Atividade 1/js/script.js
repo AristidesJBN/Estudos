@@ -7,6 +7,14 @@ function questao1(){
 }
 
 function questao2(){
-  let hoje = new Date()
+  let agora = new Date();
+  alert(agora.toLocaleString('pt-BR', { timezone: 'UTC' }));
+}
 
+function questao3(){
+  let MP = Number(prompt("Qual a média parcial"))
+  let AF = Number(prompt("Qual a nota da avaliação final"))
+
+  let MF = (MP+AF)/2
+  alert(`A média final é ${MF}`)
 }
