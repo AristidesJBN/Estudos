@@ -1,5 +1,13 @@
 function questao1(){
 
+    var x1 = Number(prompt('Insira o valor de x1'));
+    var x2 = Number(prompt('Insira o valor de x2'));
+    var y1 = Number(prompt('Insira o valor de y1'));
+    var y2 = Number(prompt('Insira o valor de y2'));
+
+    //dAB = √(x2 - x1)² + (y2 - y1)²
+    var dAB = Math.sqrt(((x2 - x1)*(x2 - x1))+((y2 - y1)*(y2 - y1)));
+    alert(`a distância entre dois pontos (x1, y1) e (x2, y2) é ${dAB}`);
 }
 
 function questao2(){
