@@ -56,3 +56,28 @@ notas_alunos = {"Ana": [8.5, 9.0, 7.5], "Bruno": [6.0, 5.5, 4.0], "Carla": [7.0,
 aprovados = alunos_aprovados(notas_alunos)
 print(aprovados)
 
+#Escreva uma função que receba dois conjuntos de números inteiros e retorne um novo conjunto com os elementos que estão em ambos os conjuntos. Por exemplo, se os conjuntos forem {1, 2, 3, 4} e {3, 4, 5, 6}, a função deve retornar {3, 4}.
+
+def intersecao_entre_conjuntos(conjunto1, conjunto2):
+    resultado = conjunto1 & conjunto2 
+    return resultado
+
+conjunto1 = {1, 2, 3, 4}
+conjunto2 = {3, 4, 5, 6}
+resultado = intersecao_entre_conjuntos(conjunto1, conjunto2)
+print(resultado)
+
+#Escreva uma função que receba um conjunto de strings e retorne um novo conjunto com as strings que são palíndromos. Um palíndromo é uma palavra que é igual quando lida de trás para frente. Por exemplo, se o conjunto for {"arara", "casa", "ovo", "radar"}, a função deve retornar {"arara", "ovo", "radar"}.
+
+def palindromos_em_conjunto(conjunto_strings):
+    palindromos = set()
+    
+    for palavra in conjunto_strings:
+        if palavra == palavra[::-1]:
+            palindromos.add(palavra)
+
+    return palindromos
+
+conjunto = {"arara", "casa", "ovo", "radar"}
+palindromos = palindromos_em_conjunto(conjunto)
+print(palindromos)
