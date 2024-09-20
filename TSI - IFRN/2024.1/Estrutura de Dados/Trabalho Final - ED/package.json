@@ -1,0 +1,11 @@
+{
+  "name": "ed-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test-getnodelevel": "node ./tests/GetNodeLevelTest.js",
+    "test-undo": "node ./tests/UndoOperationTest.js",
+    "test-priorityqueue": "node ./tests/PriorityQueueTest.js",
+    "test-all": "npm run test-getnodelevel && npm run test-undo && npm run test-priorityqueue"
+  }
+}
